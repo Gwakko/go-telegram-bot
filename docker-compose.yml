@@ -1,0 +1,7 @@
+services:
+  bot:
+    build: .
+    environment:
+      TELEGRAM_BOT_TOKEN: ${TELEGRAM_BOT_TOKEN}
+      BOT_MODE: polling
+    restart: unless-stopped
